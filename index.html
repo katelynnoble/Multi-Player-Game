@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+     <!-- Firebase SDK CODE ADD BELOW -->
+     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+ 
+ 
+     <script>
+       // Your web app's Firebase configuration
+       //add here
+       // Initialize Firebase
+       const firebaseConfig = {
+   apiKey: "AIzaSyBposIdC8u-ZzV4m0kbfjSRLPjZiSZxmqw",
+   authDomain: "multi-player-game-976bd.firebaseapp.com",
+   databaseURL: "https://multi-player-game-976bd-default-rtdb.firebaseio.com",
+   projectId: "multi-player-game-976bd",
+   storageBucket: "multi-player-game-976bd.appspot.com",
+   messagingSenderId: "911144279986",
+   appId: "1:911144279986:web:4802086ff4bd99e1ac8eab",
+   measurementId: "G-LDXLMHF3YN"
+ };
+       firebase.initializeApp(firebaseConfig);
+     </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
